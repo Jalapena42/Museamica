@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>USER</title>
+
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand">MUSE-AMICA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html"><img src="https://img.icons8.com/android/24/000000/home.png", height = 30, width = 30>
+              </a>
+            </li>
+            <li class="discover-page"><a class="nav-link" href="discover.html"><img src="https://img.icons8.com/android/24/000000/compass.png", height = 30, width = 30>
+         </a>
+
+            </li>
+            <li class="profile-page"><a class="nav-link" href="user.html"><img src="https://img.icons8.com/android/24/000000/user.png", height = 30, width = 30>
+              </a>
+                <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="music.html"><img src="https://img.icons8.com/windows/32/000000/music.png", height = 30, width = 30>
+              </a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="settings.html"><img src="https://img.icons8.com/metro/26/000000/settings.png", height = 30, width = 30>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <div class="container col-xs col-md-offset-12">
+      <div class "row">
+      <header class="jumbotron my-4  col-xs col-md-offset-12">
+        <h1 class="display-3">TOP STATS </h1>
+        <p class="lead"></p>
+      </header>
+
+    </div>
+  </div>
+  <div id="login">
+    <a href="/login" class="btn btn-primary">Log in with Spotify</a>
+  </div>
+
+
+<div class = "top-artists">
+  <h1 class ="artists">TOP ARTISTS: LAST MONTH</h1>
+  <div class="box">
+    <img src="#" id="artImg1" width="200" height="180">
+    <p id="name1"></p>
+  </div>
+
+  <div class="box">
+        <img src="#" id="artImg2" width="200" height="180">
+    <p id="name2"></p>
+  </div>
+
+  <div class="box">
+        <img src="#" id="artImg3" width="200" height="180">
+    <p id="name3"></p>
+  </div>
+
+  <div class="box">
+        <img src="#" id="artImg4" width="200" height="180">
+    <p id="name4"></p>
+  </div>
+
+  <div class="box">
+      <img src="#" id="artImg5" width="200" height="180">
+    <p id="name5"></p>
+  </div>
+
+</div>
+
+<!--
+
+<div class = "top-artists">
+    <h2 class ="artists artists2">TOP ARTISTS: PAST 6 MONTH</h2>
+    <div class="box">
+      <img src="#" id="artImg16M" width="200" height="180">
+      <p id="name1M"></p>
+    </div>
+
+    <div class="box">
+          <img src="#" id="artImg26M" width="200" height="180">
+      <p id="name2M"></p>
+    </div>
+
+    <div class="box">
+          <img src="#" id="artImg36M" width="200" height="180">
+      <p id="name3M"></p>
+    </div>
+
+    <div class="box">
+          <img src="#" id="artImg46M" width="200" height="180">
+      <p id="name4M"></p>
+    </div>
+
+    <div class="box">
+        <img src="#" id="artImg56M" width="200" height="180">
+      <p id="name5M"></p>
+    </div>
+
+  </div>
+
+
+
+    <div class = "top-artists">
+        <h1 class ="artists artists2">TOP ARTISTS: PAST FEW YEARS</h1>
+        <div class="box">
+          <img src="#" id="artImg1Y" width="200" height="180">
+          <p id="name1Y"></p>
+        </div>
+
+        <div class="box">
+              <img src="#" id="artImg2Y" width="200" height="180">
+          <p id="name2Y"></p>
+        </div>
+
+        <div class="box">
+              <img src="#" id="artImg3Y" width="200" height="180">
+          <p id="name3Y"></p>
+        </div>
+
+        <div class="box">
+              <img src="#" id="artImg4Y" width="200" height="180">
+          <p id="name4Y"></p>
+        </div>
+
+        <div class="box">
+            <img src="#" id="artImg5Y" width="200" height="180">
+          <p id="name5Y"></p>
+        </div>
+-->
+      </div>
+
+
+  <script>
+  let myArtistsLM = `{
+  "items": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
+      },
+      "followers": {
+        "href": null,
+        "total": 5360126
+      },
+      "genres": [
+        "art pop",
+        "dance pop",
+        "electropop",
+        "metropopolis",
+        "nz pop",
+        "pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/163tK9Wjr9P9DmM0AVK7lm",
+      "id": "163tK9Wjr9P9DmM0AVK7lm",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/d25fc756cd04c8b3ea196b7c07c6d057685cc405",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ca2e7772dcdfd03401cdd0c66aeee1bea8ea3904",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/2f22ea3ea1597887d86441a030204dac49a74a81",
+          "width": 160
+        }
+      ],
+      "name": "Lorde",
+      "popularity": 81,
+      "type": "artist",
+      "uri": "spotify:artist:163tK9Wjr9P9DmM0AVK7lm"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+      },
+      "followers": {
+        "href": null,
+        "total": 26530277
+      },
+      "genres": [
+        "dance pop",
+        "pop",
+        "post-teen pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
+      "id": "06HL4z0CvFAxyc27GXpf02",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/62b33d12e2b9a033cf77585f6e3d4b2c6b3a63a1",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/9ab124f3323d161f87fc9b7f8b82ab1717483b3a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/d28b46cd7e1b7336d1688d462085535963a77311",
+          "width": 160
+        }
+      ],
+      "name": "Taylor Swift",
+      "popularity": 95,
+      "type": "artist",
+      "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
+      },
+      "followers": {
+        "href": null,
+        "total": 3793435
+      },
+      "genres": [
+        "indie pop",
+        "modern alternative rock",
+        "modern rock",
+        "nu gaze",
+        "pop",
+        "rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
+      "id": "3mIj9lX2MWuHmhNCA7LSCW",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/94dd2feca73bdfb7e1c12751b499ec0a46024866",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/05dcebda5c8594a51eeb4b3333572342152b6c38",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/1717dac024e71f64ec421a658c7a9769d41ce251",
+          "width": 160
+        }
+      ],
+      "name": "The 1975",
+      "popularity": 83,
+      "type": "artist",
+      "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/49tQo2QULno7gxHutgccqF"
+      },
+      "followers": {
+        "href": null,
+        "total": 2234412
+      },
+      "genres": [
+        "la pop",
+        "pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/49tQo2QULno7gxHutgccqF",
+      "id": "49tQo2QULno7gxHutgccqF",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/7e41b32fde011d59779b14c6ed009df579f69b0b",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/48f6c74d5287e897bf7721076def476d258dd2ce",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/7c795d84cfc89b3aed4a05997284e28a34082cb0",
+          "width": 160
+        }
+      ],
+      "name": "LANY",
+      "popularity": 83,
+      "type": "artist",
+      "uri": "spotify:artist:49tQo2QULno7gxHutgccqF"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/26VFTg2z8YR0cCuwLzESi2"
+      },
+      "followers": {
+        "href": null,
+        "total": 9450412
+      },
+      "genres": [
+        "dance pop",
+        "electropop",
+        "etherpop",
+        "indie poptimism",
+        "pop",
+        "post-teen pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/26VFTg2z8YR0cCuwLzESi2",
+      "id": "26VFTg2z8YR0cCuwLzESi2",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/1ccc88afcd13131dc35a1bd028922dbc748a55fb",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/8b56979f115e855301c33828bcad2c57280adbab",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ac0a244c45f25b7d177bbe629c30565fe0768f14",
+          "width": 160
+        }
+      ],
+      "name": "Halsey",
+      "popularity": 95,
+      "type": "artist",
+      "uri": "spotify:artist:26VFTg2z8YR0cCuwLzESi2"
+    }
+  ],
+  "total": 11,
+  "limit": 5,
+  "offset": 0,
+  "href": "https://api.spotify.com/v1/me/top/artists?limit=5&offset=0&time_range=short_term",
+  "previous": null,
+  "next": "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=short_term"
+}`;
+
+  let myArtists6M =`{
+  "items": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+      },
+      "followers": {
+        "href": null,
+        "total": 26530277
+      },
+      "genres": [
+        "dance pop",
+        "pop",
+        "post-teen pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
+      "id": "06HL4z0CvFAxyc27GXpf02",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/62b33d12e2b9a033cf77585f6e3d4b2c6b3a63a1",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/9ab124f3323d161f87fc9b7f8b82ab1717483b3a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/d28b46cd7e1b7336d1688d462085535963a77311",
+          "width": 160
+        }
+      ],
+      "name": "Taylor Swift",
+      "popularity": 95,
+      "type": "artist",
+      "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
+      },
+      "followers": {
+        "href": null,
+        "total": 3793435
+      },
+      "genres": [
+        "indie pop",
+        "modern alternative rock",
+        "modern rock",
+        "nu gaze",
+        "pop",
+        "rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
+      "id": "3mIj9lX2MWuHmhNCA7LSCW",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/94dd2feca73bdfb7e1c12751b499ec0a46024866",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/05dcebda5c8594a51eeb4b3333572342152b6c38",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/1717dac024e71f64ec421a658c7a9769d41ce251",
+          "width": 160
+        }
+      ],
+      "name": "The 1975",
+      "popularity": 83,
+      "type": "artist",
+      "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      },
+      "followers": {
+        "href": null,
+        "total": 22131044
+      },
+      "genres": [
+        "dfw rap",
+        "melodic rap",
+        "rap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/246dkjvS1zLTtiykXe5h60",
+      "id": "246dkjvS1zLTtiykXe5h60",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/93fec27f9aac86526b9010e882037afbda4e3d5f",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/9040899d5660920fdf7efeb7aa2cc4e6d86f86f6",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/d15a5ffb3d22adabd09a749e09e846f527ab5a94",
+          "width": 160
+        }
+      ],
+      "name": "Post Malone",
+      "popularity": 98,
+      "type": "artist",
+      "uri": "spotify:artist:246dkjvS1zLTtiykXe5h60"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
+      },
+      "followers": {
+        "href": null,
+        "total": 5360126
+      },
+      "genres": [
+        "art pop",
+        "dance pop",
+        "electropop",
+        "metropopolis",
+        "nz pop",
+        "pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/163tK9Wjr9P9DmM0AVK7lm",
+      "id": "163tK9Wjr9P9DmM0AVK7lm",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/d25fc756cd04c8b3ea196b7c07c6d057685cc405",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ca2e7772dcdfd03401cdd0c66aeee1bea8ea3904",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/2f22ea3ea1597887d86441a030204dac49a74a81",
+          "width": 160
+        }
+      ],
+      "name": "Lorde",
+      "popularity": 81,
+      "type": "artist",
+      "uri": "spotify:artist:163tK9Wjr9P9DmM0AVK7lm"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/49tQo2QULno7gxHutgccqF"
+      },
+      "followers": {
+        "href": null,
+        "total": 2234412
+      },
+      "genres": [
+        "la pop",
+        "pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/49tQo2QULno7gxHutgccqF",
+      "id": "49tQo2QULno7gxHutgccqF",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/7e41b32fde011d59779b14c6ed009df579f69b0b",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/48f6c74d5287e897bf7721076def476d258dd2ce",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/7c795d84cfc89b3aed4a05997284e28a34082cb0",
+          "width": 160
+        }
+      ],
+      "name": "LANY",
+      "popularity": 83,
+      "type": "artist",
+      "uri": "spotify:artist:49tQo2QULno7gxHutgccqF"
+    }
+  ],
+  "total": 50,
+  "limit": 5,
+  "offset": 0,
+  "href": "https://api.spotify.com/v1/me/top/artists?limit=5&offset=0",
+  "previous": null,
+  "next": "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5"
+}`;
+
+
+  let myArtistsY = `{
+  "items": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+      },
+      "followers": {
+        "href": null,
+        "total": 26530277
+      },
+      "genres": [
+        "dance pop",
+        "pop",
+        "post-teen pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
+      "id": "06HL4z0CvFAxyc27GXpf02",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/62b33d12e2b9a033cf77585f6e3d4b2c6b3a63a1",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/9ab124f3323d161f87fc9b7f8b82ab1717483b3a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/d28b46cd7e1b7336d1688d462085535963a77311",
+          "width": 160
+        }
+      ],
+      "name": "Taylor Swift",
+      "popularity": 95,
+      "type": "artist",
+      "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+      },
+      "followers": {
+        "href": null,
+        "total": 7632592
+      },
+      "genres": [
+        "emo",
+        "modern rock",
+        "pop punk"
+      ],
+      "href": "https://api.spotify.com/v1/artists/4UXqAaa6dQYAk18Lv7PEgX",
+      "id": "4UXqAaa6dQYAk18Lv7PEgX",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/078a111caaad88290dfa51d1aebf76f305f63dbf",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/abf638dd7e70c34518f4c2972c8d3c934456713d",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/194afe6aa362b3b1c3ea51744776d96e800be9c9",
+          "width": 160
+        }
+      ],
+      "name": "Fall Out Boy",
+      "popularity": 85,
+      "type": "artist",
+      "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW"
+      },
+      "followers": {
+        "href": null,
+        "total": 3793435
+      },
+      "genres": [
+        "indie pop",
+        "modern alternative rock",
+        "modern rock",
+        "nu gaze",
+        "pop",
+        "rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3mIj9lX2MWuHmhNCA7LSCW",
+      "id": "3mIj9lX2MWuHmhNCA7LSCW",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/94dd2feca73bdfb7e1c12751b499ec0a46024866",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/05dcebda5c8594a51eeb4b3333572342152b6c38",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/1717dac024e71f64ec421a658c7a9769d41ce251",
+          "width": 160
+        }
+      ],
+      "name": "The 1975",
+      "popularity": 83,
+      "type": "artist",
+      "uri": "spotify:artist:3mIj9lX2MWuHmhNCA7LSCW"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+      },
+      "followers": {
+        "href": null,
+        "total": 16135627
+      },
+      "genres": [
+        "modern rock",
+        "rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3YQKmKGau1PzlVlkL1iodx",
+      "id": "3YQKmKGau1PzlVlkL1iodx",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/19e8f3bc875b7a4b9cf0041a5ee696c4be5478aa",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/99fb27e4f2caad57e4bf5ee55676c3e352fee3c8",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/f6a0cfdea725ca2a58de787ca5f1b82d0c516be3",
+          "width": 160
+        }
+      ],
+      "name": "Twenty One Pilots",
+      "popularity": 88,
+      "type": "artist",
+      "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V"
+      },
+      "followers": {
+        "href": null,
+        "total": 58883961
+      },
+      "genres": [
+        "pop",
+        "uk pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6eUKZXaKkcviH0Ku9w2n3V",
+      "id": "6eUKZXaKkcviH0Ku9w2n3V",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/f55cab0739390cf3b2c2f773b9c779b2f0ae8a99",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/31e1cfee4ec3849bf3036a037cbbf57239f5c7a2",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/f2e3eb4c81da6cd2f32036ab0946c6bbfe4a86b7",
+          "width": 160
+        }
+      ],
+      "name": "Ed Sheeran",
+      "popularity": 98,
+      "type": "artist",
+      "uri": "spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"
+    }
+  ],
+  "total": 50,
+  "limit": 5,
+  "offset": 0,
+  "href": "https://api.spotify.com/v1/me/top/artists?limit=5&offset=0&time_range=long_term",
+  "previous": null,
+  "next": "https://api.spotify.com/v1/me/top/artists?limit=5&offset=5&time_range=long_term"
+}`;
+
+  let myJson = JSON.parse(myArtistsLM);
+  let myArtists_urls = [];
+  let myArtists_image_urls = [];
+  let myArtistsNames = [];
+  for(let i = 0; i < 5; i ++){
+    myArtists_urls.push(myJson["items"][i].external_urls.spotify);
+    myArtists_image_urls.push(myJson["items"][i].images[0].url);
+    myArtistsNames.push(myJson["items"][i].name);
+  }
+    document.getElementById("name1").innerHTML = myArtistsNames[0];
+    document.getElementById("name2").innerHTML = myArtistsNames[1];
+    document.getElementById("name3").innerHTML = myArtistsNames[2];
+    document.getElementById("name4").innerHTML = myArtistsNames[3];
+    document.getElementById("name5").innerHTML = myArtistsNames[4];
+
+    let link1 = myArtists_image_urls[0];
+    let link2 = myArtists_image_urls[1];
+    let link3 = myArtists_image_urls[2];
+    let link4 = myArtists_image_urls[3];
+    let link5 = myArtists_image_urls[4];
+
+    document.getElementById("artImg1").setAttribute("src", link1);
+    document.getElementById("artImg2").setAttribute("src", link2);
+    document.getElementById("artImg3").setAttribute("src", link3);
+    document.getElementById("artImg4").setAttribute("src", link4);
+    document.getElementById("artImg5").setAttribute("src", link5);
+
+
+
+    let myJson2 = JSON.parse(myArtists6M);
+    let myArtists6M_urls = [];
+    let myArtists6M_image_urls = [];
+    let myArtistsNames6M = [];
+    for(let i = 0; i < 5; i ++){
+      myArtists6M_urls.push(myJson2["items"][i].external_urls.spotify);
+      myArtists6M_image_urls.push(myJson2["items"][i].images[0].url);
+      myArtistsNames6M.push(myJson2["items"][i].name);
+    }
+      document.getElementById("name1M").innerHTML = myArtistsNames6M[0];
+      document.getElementById("name2M").innerHTML = myArtistsNames6M[1];
+      document.getElementById("name3M").innerHTML = myArtistsNames6M[2];
+      document.getElementById("name4M").innerHTML = myArtistsNames6M[3];
+      document.getElementById("name5M").innerHTML = myArtistsNames6M[4];
+
+      let link1M = myArtists6M_image_urls[0];
+      let link2M = myArtists6M_image_urls[1];
+      let link3M = myArtists6M_image_urls[2];
+      let link4M = myArtists6M_image_urls[3];
+      let link5M = myArtists6M_image_urls[4];
+
+      document.getElementById("artImg16M").setAttribute("src", link1M);
+      document.getElementById("artImg26M").setAttribute("src", link2M);
+      document.getElementById("artImg36M").setAttribute("src", link3M);
+      document.getElementById("artImg46M").setAttribute("src", link4M);
+      document.getElementById("artImg56M").setAttribute("src", link5M);
+
+
+      let myJson3 = JSON.parse(myArtistsY);
+      let myArtistsY_urls = [];
+      let myArtists6Y_image_urls = [];
+      let myArtistsNames6Y = [];
+      for(let i = 0; i < 5; i ++){
+        myArtistsY_urls.push(myJson3["items"][i].external_urls.spotify);
+        myArtistsY_image_urls.push(myJson3["items"][i].images[0].url);
+        myArtistsNamesY.push(myJson3["items"][i].name);
+      }
+        document.getElementById("name1Y").innerHTML = myArtistsNamesY[0];
+        document.getElementById("name2Y").innerHTML = myArtistsNamesY[1];
+        document.getElementById("name3Y").innerHTML = myArtistsNamesY[2];
+        document.getElementById("name4Y").innerHTML = myArtistsNamesY[3];
+        document.getElementById("name5Y").innerHTML = myArtistsNamesY[4];
+
+        let link1Y = myArtistsY_image_urls[0];
+        let link2Y = myArtistsY_image_urls[1];
+        let link3Y = myArtistsY_image_urls[2];
+        let link4Y = myArtistsY_image_urls[3];
+        let link5Y = myArtistsY_image_urls[4];
+
+        document.getElementById("artImg1Y").setAttribute("src", link1Y);
+        document.getElementById("artImg2Y").setAttribute("src", link2Y);
+        document.getElementById("artImg3Y").setAttribute("src", link3Y);
+        document.getElementById("artImg4Y").setAttribute("src", link4Y);
+        document.getElementById("artImg5Y").setAttribute("src", link5Y);
+
+
+  </script>
+
+
+
+  </body>
+</html>

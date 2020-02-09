@@ -1,0 +1,131 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+body{
+  background-image: url('images/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #A6C1EF;
+  font-family: impact;
+}
+
+.navbar-brand{
+  margin-left: -50px;
+
+}
+
+.navbar-nav > li{
+  padding-left:-100px;
+  padding-right:30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: -20px;
+}
+
+
+.container.row.col.post {
+  float: left;
+}
+
+.jumbotron {
+  margin-top: -50px;
+  margin-bottom: -100px;
+  margin-left: -30px;
+  margin-right: 200px;
+  border-radius: 25px;
+  color: #FFFFFF;
+  background-color: rgb(36, 37, 39, 0.3);
+
+}
+.playback {
+  margin-top: -50px;
+  margin-left: 800px;
+  margin-right: 0px;
+  background-color: #81858C;
+  border-color: #000000;
+  text-align: center;
+}
+
+.playback{
+  margin-left: 200px;
+
+}
+
+.col{
+  margin-right: 20px;
+}
+
+.btn {
+  background-color: #81858C;
+  border-color: #000000;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.post-title, .post-subtitle, .post-meta, .post-user{
+  color: #000000;
+}
+.post:hover{
+    border-color: #000000;
+}
+
+.footer {
+  color: #FFFFFF;
+  background-color: rgb(36, 37, 39, 0.3);
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-left: -100px;
+}
+
+
+.col1{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+
+.col2{
+  margin-left: 250px;
+}
+
+
+.row{
+  margin-left:70px;
+}
+
+
+.card{
+  margin-bottom: -50px;
+}
+
+.box {
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+.artists{
+  margin-left: 40px;
+}
+
+.artists2{
+  display: inline-block;
+  float:left;
+}
+
+.tracks{
+  margin-left: 2 0px;
+}
